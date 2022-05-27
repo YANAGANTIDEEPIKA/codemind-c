@@ -1,22 +1,20 @@
- #include<stdio.h>
+#include<stdio.h>
 int main()
 {
-    int n,re=0,rm,ren;
-    scanf("%d",&n);
-    ren=n;
-    while(n>0)
+    int n,re=0,r,t;
+    scanf("%d",&t);
+    n=t;
+    while(n!=0)
     {
-        rm=n%10;//re=121%10=4--->4,3,2
-        re=re*10+rm;
-        n=n/10;//234=234/10=23,2,0
+        r=n%10;
+        re=re*10+r;
+        n=n/10;
     }
-    if(re==ren)
+    if(t==re)
     {
         printf("True");
     }
-
     else{
         printf("False");
     }
-    
 }
