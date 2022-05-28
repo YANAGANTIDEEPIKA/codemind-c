@@ -1,22 +1,18 @@
 #include<stdio.h>
-int singlesum(int n)
-{
-   int sum=0;
-    while(n>0 || sum>9)
-    {
-        if(n==0)
-        {
-            n=sum;
-            sum=0;
-        }
-        sum+=n%10;
-        n/=10;
-    }
-    printf("%d",sum);
-}
 int main()
 {
-    int n;
+    int n,r,sum=0;
     scanf("%d",&n);
-    singlesum(n);
+    while(n/10!=0)
+    {
+        sum=0;
+    while(n!=0)
+    {
+        r=n%10;
+        sum=sum+r;
+        n=n/10;
+    }
+     n=sum;
+}
+printf("%d",sum);
 }
