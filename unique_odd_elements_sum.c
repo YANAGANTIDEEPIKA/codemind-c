@@ -20,7 +20,7 @@ int main()
         }
         if(c==0)
         {
-            if(a[i]%2)
+            if(a[i]%2!=0)
             {
                 s+=a[i];
             }
