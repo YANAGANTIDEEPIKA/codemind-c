@@ -5,9 +5,13 @@ int main()
     scanf("%d",&n);
     for(i=0;i<n;i++)
     {
-        for(j=0;j<n;j++)
+        for(j=1;j<n-1;j++)
         {
-            printf("%c ",'A'+i);
+            printf("%d",j);
+        }
+        for(j=1;j<=n-3;j++)
+        {
+            printf("%d",j);
         }
         printf("
 ");
